@@ -1,0 +1,30 @@
+{
+    "name": "nidux/app4less-push",
+    "type": "library",
+    "description": "Provides a way to send push notifications to App4Less API and obtain the application token when using the mobile app",
+    "require": {
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "6.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nidux\\App4LessPush\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Nidux\\App4LessPush\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
